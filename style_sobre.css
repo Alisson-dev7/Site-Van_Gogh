@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transform: 0.2s linear;
+}
+
+body{
+  background-color: #214365;
+}
+section{
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+
+.logo img{
+  height: 60px;
+}
+
+.header{
+  background-color: #000000;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.header section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.navbar{
+  font-size: 30px;
+  margin: 0 1rem;
+}
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.title{
+    font-family: "Cal Sans", sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.home-container{
+  height: 150vh;
+}
+.home-container section{
+  padding-top: 6%;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.home-container section img{
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 25px;
+}
+.home-container section p{
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.home ul li{
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-align: left;
+  align-items: left;
+  display: flex;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: rgba(0,0,0,0.3) solid 4px;
+  background-color: transparent;
+}
+.home ul li img{
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 200px;
+}
+.home ul li h3{
+  margin-left: 20px;
+  margin-top: 75px;
+  font-size: 30px;
+  color: #fff;
+}
+.div{
+  display: none;
+  animation: fade-in 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  } to{
+    opacity: 1;
+  }
+
+}
+footer{
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-size: 17px;
+}
+footer p{
+  color: #fff;
+  margin-bottom: 7px;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
