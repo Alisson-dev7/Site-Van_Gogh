@@ -1,3 +1,3 @@
 function sobre(){
-    window.location.href="/tela_inicial/Sobre.html";
+    window.location.href="/Sobre.html";
 }
