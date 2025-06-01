@@ -87,8 +87,8 @@ span{
     margin-bottom: 2rem;
 }
 footer{
-  margin-bottom: 10px;
-  margin-left: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
   font-size: 17px;
 }
 footer p{
