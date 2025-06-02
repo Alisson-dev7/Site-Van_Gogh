@@ -99,3 +99,29 @@ footer a{
     color: #fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1020px) {
+    .logo img{
+      height: 30px;
+    }
+    .header section{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .navbar{
+      display: none;
+    }
+    .home ul li{
+      font-size: 15px;
+      padding: 15px 40px;
+      border: 2px solid rgba(0,0,0,0.2);
+      border-radius: 20px;
+    }
+    .title{
+      margin-top: 70px;
+      font-size: 2rem;
+    }
+    footer{
+        font-size: 11px;
+    }
+}

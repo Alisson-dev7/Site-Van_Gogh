@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(/tela_de_login/img/r44d0f4o4xj91.jpg);
+    background-image: url(/site/tela_de_login/img/r44d0f4o4xj91.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,4 +123,21 @@ footer p{
 footer a{
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .container{
+        width: 300px;
+        height: 300px;
+        padding: 20px 30px;
+        backdrop-filter: blur(100px);
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    .input-box{
+        height: 50px;
+        margin: 10px 0;
+    }
+
 }

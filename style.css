@@ -172,3 +172,70 @@ footer a{
     color: #fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1020px) {
+    .logo img{
+        height: 40px;
+    }
+    .header section{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .home-container{
+        height: 115vh;
+    }
+    .home-container section{
+        flex-direction: column-reverse;
+    }
+    .navbar{
+        display: none;
+    }
+    .content h3{
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+    .content p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .content img{
+    margin-left: 0px;
+    height: 400px;
+    width: 300px;
+    }   
+    .title{
+        font-size: 3rem;
+    }
+    .obras .box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .obras .box-container img{
+    height: 240px;
+    }
+    .but-box{
+        font-size: 20px;
+        width: 50%;
+        height: 50px;
+    }
+    .frases  .box-frases1 .box-frases{
+        padding: 10px 15px 15px 24px;
+    }
+    .frases  .box-frases1 .box-frases h3{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .frases  .box-frases1 .box-frases p{
+        font-size: 0.8rem;
+    }
+    #frase2{
+        height: 130px;
+    }
+    #frase3{
+        height: 80px;
+    }
+    footer{
+        font-size: 11px;
+    }
+}
