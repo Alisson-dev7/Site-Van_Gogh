@@ -233,7 +233,10 @@ footer a{
         height: 130px;
     }
     #frase3{
-        height: 80px;
+        height: 100px;
+    }
+    #frase5{
+        height: 200px;
     }
     footer{
         font-size: 11px;
