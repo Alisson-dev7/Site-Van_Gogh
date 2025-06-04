@@ -90,6 +90,7 @@ section{
   align-items: center;
   text-align: center;
   margin-left: 80px;
+  cursor: pointer;
 }
 #mercado-livre img{
   height: 25px;
