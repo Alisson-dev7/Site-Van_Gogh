@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style_sobre.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="script1.js"></script>
   <title>Van gogh</title>
 </head>
 <body>
 <header class="header">
     <section>
-        <a class="logo">
+      <div class="menu-desktop">
+        <a class="logo" id="logo-desktop">
             <img src="/site/obras-img/1 1.png" alt="logo">
         </a>
 
@@ -19,19 +21,29 @@
             <a href="/#obras">Obras</a>
             <a href="/#frases">Frases</a>
             <a href="/poema/index.html">Poemas</a>
+            <a href="/produtos/index.html">Produtos</a>
         </nav>
+      </div>
 
+      <div class="menu-mobile-1">
         <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img  class="icon" src="/site/tela_de_login/img/menu_white_36dp.svg" alt=""></button>
-          </div>
-          <div class="mobile-menu" onclick="menuShow()">
+            <a class="logo" id="logo-mobile">
+            <img src="/site/obras-img/1 1.png" alt="logo">
+            </a>
+            <button onclick="menuShow()"><img  class="icon" src="/site/tela_de_login/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+        
+        <div class="mobile-menu" onclick="menuShow()">
                 <img class="icon-fechar" src="/site/tela_de_login/img/close_white_36dp.svg" alt="">
                 <a href="/#home">Home</a>
                 <a href="/#obras">Obras</a>
                 <a href="/#frases">Frases</a>
                 <a href="/poema/index.html">Poemas</a>
+                <a href="/produtos/index.html">Produtos</a>
            </div>
           <div class="overlay-menu" onclick="menuShow()"></div>
+      </div>
+        
     </section>
 </header>
 <div class="home-container">
@@ -85,8 +97,7 @@
       </li>
       <div id="div-5" class="div">
         <img src="/site/obras-img/vangoghmuseum-s0176v1962-3840.png" alt="" id="img-sobre">
-        <p id="p-sobre">A Noite Estrelada é uma pintura de 1889 do artista holandês Vincent Van Gogh. Foi feita utilizando a técnica de óleo sobre tela, mede 73 x 92 cm e se encontra atualmente no Museu de Arte Moderna de Nova Iorque (MoMa), nos EUA. A tela apresenta uma paisagem noturna com destaque para o céu e as estrelas. Há também ciprestes que sobem ao firmamento como labaredas de fogo, montanhas e um povoado.
-      Tal obra se encaixa no movimento de vanguarda europeu pós-impressionista.</p>
+        <p id="p-sobre">"Amendoeiras em Flor", ou "Almond Blossoms" em inglês, é uma série de pinturas de Vincent van Gogh que retratam amendoeiras em flor. Uma das mais famosas é a pintura de 1890, criada como um presente para o sobrinho recém-nascido do artista.</p>
       </div>
 
       <li onclick="mostrar6()">
@@ -95,7 +106,7 @@
       </li>
       <div id="div-6" class="div">
         <img src="/site/obras-img/Os-girassois.png" alt="" id="img-sobre">
-        <p id="p-sobre">A obra Lírios de Vincent van Gogh é uma das mais conhecidas e admiradas da fase final de sua carreira. Pintada em 1889, durante o período em que o artista esteve internado no asilo de Saint-Paul-de-Mausole, na França, a pintura revela muito mais do que a simples representação de flores. Ela traz consigo simbolismos profundos que refletem o estado emocional e espiritual de Van Gogh.</p>
+        <p id="p-sobre">Os girassóis são uma série de quadros pintados por Vincent van Gogh, conhecidos por sua intensa cor amarela e pelo seu simbolismo ligado à vida e à morte. São uma das obras mais famosas e queridas do artista, e muitas vezes são associados à alegria, à luz e à celebração da vida. </p>
       </div>
 
       <li onclick="mostrar7()">
@@ -104,7 +115,7 @@
       </li>
       <div id="div-7" class="div">
         <img src="/site/obras-img/terraco-do-cafe-na-praca-do-forum.png" alt="" id="img-sobre">
-        <p id="p-sobre">Campo de Trigo com Corvos é uma das pinturas mais famosas de Vincent van Gogh e talvez uma de suas últimas pinturas. A dramaticidade nela apresentada e o tema escolhido, funciona como um presságio de sua morte, que é comum ser associada ao suicídio do artista que aconteceu algumas semanas depois.</p>
+        <p id="p-sobre">"Terraço do Café na Praça do Fórum" é uma pintura a óleo de 1888 de Vincent van Gogh, também conhecida como "Terraço do Café à Noite". A obra retrata um café ao ar livre em Arles, na França, durante a noite, com um céu estrelado e pessoas a passear na rua. </p>
       </div>
 
       <li onclick="mostrar8()" >
@@ -113,17 +124,35 @@
       </li>
       <div id="div-8" class="div">
         <img src="/site/obras-img/Vinha-encarnada-600x408 1.png" alt="" id="img-sobre">
-        <p id="p-sobre">"O Quarto em Arles" (The Bedroom in Arles) é uma das pinturas mais famosas de Vincent van Gogh, representando o quarto que ele alugava em Arles, França, durante sua estadia lá. A obra foi pintada entre outubro de 1888 e setembro de 1889, e existem três versões originais dela. </p>
+        <p id="p-sobre">"Vinha Encarnada" refere-se à pintura a óleo de Vincent van Gogh, também conhecida como "Os Vinhedos Vermelhos" ou "Die Rooi Wingerd" (em holandês), que retrata um vinhedo em Arles, França. É a única obra de van Gogh vendida em vida. A pintura foi feita em novembro de 1888, após a colheita, o que sugere que as uvas retratadas podem ser variedades tardias, como Grenache ou Carignan, comuns na região de Arles. </p>
       </div>
 
 
     </ul>
   </section>
-  <footer>
-        <p>Copyright &copy; 2025, Alisson.</p>
-        <p>(82) 99363-7156</p>
-        <a href="https://www.instagram.com/alisson_dev7/?utm_source=ig_web_button_share_sheet">@alisson_dev7</a>
-  </footer>
 </div>
+<footer>
+        <section>
+            <div id="Redes-d-contato">
+                <img src="/site/tela_de_login/img/Texto do seu parágrafo (1) 1.svg">
+                <div id="redes-sociais">
+                    <a href="https://www.instagram.com/alisson_dev7/?utm_source=ig_web_button_share_sheet" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/82993637156" id="whats"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="contato">
+                <h1>Contatos</h1>
+                <ul>
+                    <li><a><i class="fa-solid fa-envelope"></i> Josealisson977.dev@gmail.com</a></li>
+                    <li><a><i class="fa-solid fa-phone"></i> (82) 99363-7156</a></li>
+                    <li><a><i class="fa-solid fa-globe"></i> Paulo Jacinto-AL</a></li>
+                </ul>
+            </div>
+        </section>
+        <div id="copy">
+            <p>Copyright &copy; 2025, Alisson.</p>
+        </div>
+    </footer>
 </body>
 </html>

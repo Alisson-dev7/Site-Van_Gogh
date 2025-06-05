@@ -5,35 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/site/tela_de_login/img/3.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
     <title>Van Gogh</title>
 </head>
 <body>
     <header class="header">
         <section>
-            <a class="logo">
-                <img src="/site/obras-img/1 1.png" alt="logo">
+            <div class="menu-desktop">
+        <a class="logo" id="logo-desktop">
+            <img src="/site/obras-img/1 1.png" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="/#home">Home</a>
+            <a href="/#obras">Obras</a>
+            <a href="/#frases">Frases</a>
+            <a href="/poema/index.html">Poemas</a>
+            <a href="/produtos/index.html">Produtos</a>
+        </nav>
+      </div>
+
+      <div class="menu-mobile-1">
+        <div class="mobile-menu-icon">
+            <a class="logo" id="logo-mobile">
+            <img src="/site/obras-img/1 1.png" alt="logo">
             </a>
-
-            <nav class="navbar">
-                <a href="/#home">Home</a>
-                <a href="/#obras">Obras</a>
-                <a href="/#frases">Frases</a>
-                <a href="/poema/index.html">Poemas</a>
-            </nav>
-
-
-            <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img  class="icon" src="/site/tela_de_login/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-            <div class="mobile-menu" onclick="menuShow()">
+            <button onclick="menuShow()"><img  class="icon" src="/site/tela_de_login/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+        
+        <div class="mobile-menu" onclick="menuShow()">
                 <img class="icon-fechar" src="/site/tela_de_login/img/close_white_36dp.svg" alt="">
                 <a href="/#home">Home</a>
                 <a href="/#obras">Obras</a>
                 <a href="/#frases">Frases</a>
                 <a href="/poema/index.html">Poemas</a>
-            </div>
-            <div class="overlay-menu" onclick="menuShow()"></div>
+                <a href="/produtos/index.html">Produtos</a>
+           </div>
+          <div class="overlay-menu" onclick="menuShow()"></div>
+      </div>
 
         </section>
     </header>
@@ -122,9 +132,27 @@
         </section>
     </div>
     <footer>
-        <p>Copyright &copy; 2025, Alisson.</p>
-        <p>(82) 99363-7156</p>
-         <a href="https://www.instagram.com/alisson_dev7/?utm_source=ig_web_button_share_sheet">@alisson_dev7</a>
+        <section>
+            <div id="Redes-d-contato">
+                <img src="/site/tela_de_login/img/Texto do seu parágrafo (1) 1.svg">
+                <div id="redes-sociais">
+                    <a href="https://www.instagram.com/alisson_dev7/?utm_source=ig_web_button_share_sheet" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/82993637156" id="whats"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="contato">
+                <h1>Contatos</h1>
+                <ul>
+                    <li><a><i class="fa-solid fa-envelope"></i> Josealisson977.dev@gmail.com</a></li>
+                    <li><a><i class="fa-solid fa-phone"></i> (82) 99363-7156</a></li>
+                    <li><a><i class="fa-solid fa-globe"></i> Paulo Jacinto-AL</a></li>
+                </ul>
+            </div>
+        </section>
+        <div id="copy">
+            <p>Copyright &copy; 2025, Alisson.</p>
+        </div>
     </footer>
 </body>
 </html>

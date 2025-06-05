@@ -4,21 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
     <title>Van Gogh</title>
 </head>
 <body>
     <header class="header">
         <section>
-            <a class="logo">
-                <img src="/site/obras-img/1 1.png" alt="logo">
+           <div class="menu-desktop">
+        <a class="logo" id="logo-desktop">
+            <img src="/site/obras-img/1 1.png" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="/#home">Home</a>
+            <a href="/#obras">Obras</a>
+            <a href="/#frases">Frases</a>
+            <a href="/poema/index.html">Poemas</a>
+            <a href="/produtos/index.html">Produtos</a>
+        </nav>
+      </div>
+
+      <div class="menu-mobile-1">
+        <div class="mobile-menu-icon">
+            <a class="logo" id="logo-mobile">
+            <img src="/site/obras-img/1 1.png" alt="logo">
             </a>
-            <nav class="navbar">
-                <a href="/tela_inicial/#home">Home</a>
-                <a href="/tela_inicial/#obras">Obras</a>
-                <a href="/tela_inicial/#frases">Frases</a>
-                <a href="/tela_inicial/poema/index.html">Poemas</a>
-            </nav>
+            <button onclick="menuShow()"><img  class="icon" src="/site/tela_de_login/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+        
+        <div class="mobile-menu" onclick="menuShow()">
+                <img class="icon-fechar" src="/site/tela_de_login/img/close_white_36dp.svg" alt="">
+                <a href="/#home">Home</a>
+                <a href="/#obras">Obras</a>
+                <a href="/#frases">Frases</a>
+                <a href="/poema/index.html">Poemas</a>
+                <a href="/produtos/index.html">Produtos</a>
+           </div>
+          <div class="overlay-menu" onclick="menuShow()"></div>
+      </div>
+            
         </section>
     </header>
         <div class="container">
@@ -28,27 +53,76 @@
                     <li>
                         <img src="/produtos/img/D_NQ_NP_671640-MLB83943733838_042025-O-quadro-decorativo-noite-estrelada-van-gogh-moderno-70x50.webp" alt="img1">
                         <p>Quadro Decorativo Noite Estrelada</p>
-                        <button id="mercado-livre"><img src="/produtos/img/como-vender-no-mercado-livre.svg" alt=""><p>Mercado Livre</p></button>
+                        <button id="mercado-livre" onclick="QuadroM()"><img src="/produtos/img/como-vender-no-mercado-livre.svg" alt=""><p>Mercado Livre</p></button>
                     </li>
                     <li>
-                         <img src="/produtos/img/D_NQ_NP_613562-MLB54071708814_022023-O-caneca-pintores-van-gogh-a-noite-estrelada.webp" alt="img1">
+                        <img src="/produtos/img/D_NQ_NP_613562-MLB54071708814_022023-O-caneca-pintores-van-gogh-a-noite-estrelada.webp" alt="img1">
                         <p>Caneca Pintores Van Gogh A Noite Estrelada</p>
-                        <button id="mercado-livre"><img src="/produtos/img/como-vender-no-mercado-livre.svg" alt=""><p>Mercado Livre</p></button>
+                        <button id="mercado-livre" onclick="Caneca()"><img src="/produtos/img/como-vender-no-mercado-livre.svg" alt=""><p>Mercado Livre</p></button>
                     </li>
                     <li>
-                         <img src="/produtos/img/D_NQ_NP_600085-MLB70378207222_072023-O-quebra-cabeca-2000-pecas-noite-estrelada-s-rodano-van-gogh.webp" alt="img1">
+                        <img src="/produtos/img/D_NQ_NP_600085-MLB70378207222_072023-O-quebra-cabeca-2000-pecas-noite-estrelada-s-rodano-van-gogh.webp" alt="img1">
                         <p>Quebra-cabeça 2000 Peças Noite Estrelada</p>
-                        <button id="mercado-livre"><img src="/produtos/img/como-vender-no-mercado-livre.svg" alt=""><p>Mercado Livre</p></button>
+                        <button id="mercado-livre" onclick="Quebra()"><img src="/produtos/img/como-vender-no-mercado-livre.svg" alt=""><p>Mercado Livre</p></button>
                     </li>
                     <li>
-                         <img src="/produtos/img/D_NQ_NP_2X_639115-MLB74638243885_022024-F-sketchbook-capa-dura-desenho-e-aquarela-240g-ceu-estrelado.webp" alt="img1">
+                        <img src="/produtos/img/D_NQ_NP_2X_639115-MLB74638243885_022024-F-sketchbook-capa-dura-desenho-e-aquarela-240g-ceu-estrelado.webp" alt="img1">
                         <p>Sketchbook Capa Dura Desenho E Aquarela</p>
                         <button id="mercado-livre" onclick="caderno()"><img src="/produtos/img/como-vender-no-mercado-livre.svg" alt=""><p>Mercado Livre</p></button>
                     </li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img src="/produtos/img/Captura de tela 2025-06-04 153321.png" alt="img1">
+                        <p>Mouse pad van gogh tapete durável antiderrapante</p>
+                        <button id="aliexpress" onclick="Mousepad()"><img src="/produtos/img/aliexpress_logo_icon_167892 1.svg" alt=""><p>AliExpress</p></button>
+                    </li>
+                    <li>
+                        <img src="/produtos/img/Captura de tela 2025-06-04 154350.png" alt="img1">
+                        <p>Camiseta feminina verão topos t camisas</p>
+                        <button id="aliexpress" onclick="camiseta()"><img src="/produtos/img/aliexpress_logo_icon_167892 1.svg" alt=""><p>AliExpress</p></button>
+                    </li>
+                    <li>
+                        <img src="/produtos/img/Captura de tela 2025-06-04 154340.png" alt="img1">
+                        <p>Pintura em tela decorações para sala de estar arte da parede</p>
+                        <button id="aliexpress" onclick="Pintura()"><img src="/produtos/img/aliexpress_logo_icon_167892 1.svg" alt=""><p>AliExpress</p></button>
+                    </li>
+                    <li>
+                        <img src="/produtos/img/Captura de tela 2025-06-04 154329.png" alt="img1">
+                        <p>Van gogh céu estrelado coração anatômico esmalte</p>
+                        <button id="aliexpress" onclick="coracao()"><img src="/produtos/img/aliexpress_logo_icon_167892 1.svg" alt=""><p>AliExpress</p></button>
+                    </li>
+                    <li>
+                        <img src="/produtos/img/Captura de tela 2025-06-04 163326.png" alt="img1">
+                        <p>Tapete de quarto do van gogh</p>
+                        <button id="aliexpress" onclick="tapete()"><img src="/produtos/img/aliexpress_logo_icon_167892 1.svg" alt=""><p>AliExpress</p></button>
+                    </li>
+                    <li><img src="/produtos/img/Captura de tela 2025-06-04 163741.png" alt="img1">
+                        <p>Pintura de tela van gogh para sala de estar</p>
+                        <button id="aliexpress" onclick="pintura()"><img src="/produtos/img/aliexpress_logo_icon_167892 1.svg" alt=""><p>AliExpress</p></button></li>
                 </ul>
             </section>
         </div>
+        <footer>
+        <section>
+            <div id="Redes-d-contato">
+                <img src="/site/tela_de_login/img/Texto do seu parágrafo (1) 1.svg">
+                <div id="redes-sociais">
+                    <a href="https://www.instagram.com/alisson_dev7/?utm_source=ig_web_button_share_sheet" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/82993637156" id="whats"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="contato">
+                <h1>Contatos</h1>
+                <ul>
+                    <li><a><i class="fa-solid fa-envelope"></i> Josealisson977.dev@gmail.com</a></li>
+                    <li><a><i class="fa-solid fa-phone"></i> (82) 99363-7156</a></li>
+                    <li><a><i class="fa-solid fa-globe"></i> Paulo Jacinto-AL</a></li>
+                </ul>
+            </div>
+        </section>
+        <div id="copy">
+            <p>Copyright &copy; 2025, Alisson.</p>
+        </div>
+    </footer>
 </body>
 </html>
