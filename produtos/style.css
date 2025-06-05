@@ -294,7 +294,11 @@ footer{
       margin-bottom: 30px;
     }
 
-    footer{
-        font-size: 11px;
+    footer section{
+        flex-direction: column;
+    }
+    #Redes-d-contato{
+    justify-items: left;
+    margin-bottom: 10px;
     }
   }

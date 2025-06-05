@@ -292,5 +292,12 @@ display: none;
     .mobile-menu.open ~ .overlay-menu{
         display: block;
     }
+    footer section{
+        flex-direction: column;
+    }
+    #Redes-d-contato{
+    justify-items: left;
+    margin-bottom: 10px;
+    }
 
 }
